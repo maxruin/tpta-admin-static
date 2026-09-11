@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>後台登入｜社團法人臺灣物理治療學會 CMS</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="../HTML/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<div class="login-wrap">
+  <div class="login-split">
+    <div class="login-visual">
+      <div class="login-deco d1"></div>
+      <div class="login-deco d2"></div>
+      <div class="login-visual-inner">
+        <img src="../HTML/images/logo.svg" alt="" onerror="this.style.display='none'">
+        <h2>臺灣物理治療學會</h2>
+        <p>Taiwan Physical Therapy Association<br>CMS 後台管理系統</p>
+      </div>
+    </div>
+    <div class="login-form-panel">
+      <h1>使用者登入</h1>
+      <p class="hint">請輸入管理帳號與密碼以繼續使用後台系統</p>
+      <div class="field"><label>帳號 / Email</label><input type="text" placeholder="you@tpta.org.tw" value="editor@tpta.org.tw"></div>
+      <div class="field" style="margin-top:14px"><label>密碼</label><div style="position:relative"><input type="password" id="pw-login" placeholder="請輸入密碼" value="••••••••" style="padding-right:44px"><button type="button" data-toggle-pw="pw-login" style="position:absolute;right:6px;top:6px;width:30px;height:30px;border:0;background:transparent;color:var(--muted);cursor:pointer"><svg viewBox="0 0 24 24" fill="none"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg></button></div></div>
+      <div class="row-between"><label style="display:flex;align-items:center;gap:6px"><input type="checkbox" checked style="accent-color:var(--accent)">記住我</label><a href="#">忘記密碼？</a></div>
+      <button class="btn" type="button" data-toast="登入成功（示意）">登入後台</button>
+      <p class="login-foot">© 2026 社團法人臺灣物理治療學會</p>
+    </div>
+  </div>
+</div>
+<div class="toast"></div>
+<script src="js/admin.js"></script>
+</body>
+</html>
